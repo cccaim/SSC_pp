@@ -1,0 +1,253 @@
+/* 텍스트 스타일 수정란*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: #333;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: #333;
+  background-color: transparent;
+
+  justify-content: space-between;
+  align-items: center;
+}
+/* 헤더 이미지 스타일 설정 */
+header img {
+  height: 50px;
+}
+/* 네비게이션 바 설정 */
+.nav a {
+  /* border: 1px solid #fff; */
+  display: inline;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 1000;
+  margin-left: 35px;
+  transition: 0.5s;
+  margin: 15px;
+}
+.nav a:hover,
+.nav a.active {
+  color: greenyellow;
+}
+/* aside 설정 */
+aside {
+  float: right;
+  width: 200px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 50px;
+  background-color: #333;
+}
+aside h2 {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+aside a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 1000;
+  margin-left: 35px;
+  transition: 0.5s;
+  padding-top: 10px;
+  margin: 15px;
+}
+aside a:hover {
+  color: greenyellow;
+}
+/* section  */
+section {
+  width: 100%;
+  border: 1px solid #333;
+  padding: 50px;
+  background-color: #333;
+}
+
+/* footer 설정 */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  clear: both;
+}
+
+/* 로그인 창 복붙 */
+.wrapper {
+  float: left;
+  min-width: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px, rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-top: 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 20px;
+  padding-bottom: 30px;
+  margin: 30px 0;
+}
+/* 입력 box UI 개선 */
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+/* 입력창 글자 가시성 조정 */
+.input-box input::placeholder {
+  color: #fff;
+}
+/* 인풋박스 할당 */
+.input-box {
+  position: relative;
+}
+/* 아이콘 위치변경 */
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+/* 비밀번호 찾기 메뉴 위치 및 가시성 변경 */
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px;
+}
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+/* 확인 LOGIN 창 꾸미기 */
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.wrapper .btn:hover,
+.wrapper .btn.active {
+  background-color: greenyellow;
+}
+
+/*  */
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    display: none;
+  }
+}
+
+/* 백그라운드 슬라이드 */
+@keyframes slideBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.background-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  animation: slideBackground 10s linear infinite;
+}
+
+.background-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.background-slider img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.background-slider img:nth-child(3) {
+  animation-delay: 10s;
+}
