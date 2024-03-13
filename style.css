@@ -15,9 +15,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  height: 70px;
+  padding: 20px;
   background-color: #333;
-  background-color: transparent;
+  /* background-color: transparent; */
 
   justify-content: space-between;
   align-items: center;
@@ -74,9 +75,10 @@ aside a:hover {
 /* section  */
 section {
   width: 100%;
-  border: 1px solid #333;
-  padding: 50px;
-  background-color: #333;
+  height: 70px;
+  padding: 34px;
+  background-color: transparent;
+  border: 2px solid greenyellow;
 }
 
 /* footer 설정 */
@@ -103,7 +105,7 @@ footer {
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .wrapper h1 {
@@ -247,8 +249,4 @@ footer {
 
 .background-slider img:nth-child(2) {
   animation-delay: 5s;
-}
-
-.background-slider img:nth-child(3) {
-  animation-delay: 10s;
 }
