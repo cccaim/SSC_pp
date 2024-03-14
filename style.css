@@ -80,7 +80,7 @@ header img {
 }
 
 .top {
-  height: 480px;
+  height: 470px;
   background-color: #333;
   color: #fff;
 }
@@ -109,7 +109,7 @@ header img {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  margin-top: 75px;
+  margin-top: 70px;
 }
 .section .slidelist {
   white-space: nowrap;
