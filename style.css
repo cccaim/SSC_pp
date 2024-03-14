@@ -90,6 +90,19 @@ header img {
   background-color: gray;
   color: #fff;
 }
+.center h1 {
+  margin: 50px auto;
+  color: greenyellow;
+}
+.center h2 {
+  margin: 30px auto;
+  font-weight: 600;
+}
+.center p {
+  text-align: center;
+  margin: 10px 20%;
+}
+
 /* 문단추가 예비용
 .bottom {
   height: 1000px;
