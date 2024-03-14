@@ -32,19 +32,58 @@
     <!-- 문단구문 -->
     <div class="container">
       <div class="top" id="top">
-        <h1>상단 문단</h1>
+        <!-- 탑입력  -->
       </div>
       <div class="center" id="center">
-        <h1>중앙 문단</h1>
+        <!-- 배너테스트 슬라이드사용-->
+        <div class="section">
+          <input type="radio" name="slide" id="slide01" checked />
+          <input type="radio" name="slide" id="slide02" />
+          <input type="radio" name="slide" id="slide03" />
+          <div class="slidewrap">
+            <ul class="slidelist">
+              <li>
+                <a>
+                  <img src="image/viper-mini-signature-store-desktop.jpg" />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src="image/viper-mini-signature-store-desktop.jpg" />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src="image/viper-mini-signature-store-desktop.jpg" />
+                </a>
+              </li>
+            </ul>
+
+            <div class="slide-control">
+              <div class="control01">
+                <label for="slide03" class="left"></label>
+                <label for="slide02" class="right"></label>
+              </div>
+              <div class="control02">
+                <label for="slide01" class="left"></label>
+                <label for="slide03" class="right"></label>
+              </div>
+              <div class="control03">
+                <label for="slide02" class="left"></label>
+                <label for="slide01" class="right"></label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="bottom" id="bottom">
-        <h1>하단 문단</h1>
+        <!-- 바텀입력 -->
       </div>
     </div>
 
     <!-- aside내용 -->
     <aside class="tabs">
-      <h2>500px이상이동탭</h2>
+      <h2>500px이상</h2>
       <a href="#top">TOP</a>
       <a href="#center">CENTER</a>
       <a href="#bottom">BOTTOM</a>
