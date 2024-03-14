@@ -63,38 +63,70 @@ header img {
 .nav a.active {
   color: greenyellow;
 }
+
+/* container 문단 설정 */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top,
+.center,
+.bottom {
+  /* flex: 1; */
+  text-align: center;
+}
+
+.top {
+  height: 1000px;
+  background-color: #333;
+  color: #fff;
+}
+
+.center {
+  height: 1000px;
+  background-color: #fff;
+  color: #333;
+}
+
+.bottom {
+  height: 1000px;
+  background-color: #333;
+  color: #fff;
+}
+
 /* aside 설정 */
 aside {
-  float: right;
-  width: 200 px;
-  border: 2px solid #fff;
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  border: 2px solid greenyellow;
   border-radius: 10px;
   padding: 10px;
   margin-top: 200px;
   margin-right: 20px;
   background-color: #333;
-  text-align: 0;
 }
 aside h2 {
   border-bottom: 2px solid yellowgreen;
   padding: 10px 20px;
   margin-bottom: 10px;
 }
-aside li {
-  text-align: left;
-  border-bottom: 1px solid yellowgreen;
-}
+
 aside a {
+  display: flex;
   font-size: 15px;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: 0.5s;
-  margin: 0px 15px;
+  margin: 10px 15px;
 }
 aside a:hover {
   color: greenyellow;
 }
+
 /*
 section {
   width: 100%;
@@ -235,8 +267,11 @@ footer {
   0% {
     opacity: 0;
   }
+  80% {
+    opacity: 0.1;
+  }
   100% {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 @keyframes showRight {
