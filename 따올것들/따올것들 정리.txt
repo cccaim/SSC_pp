@@ -1,5 +1,0 @@
-10장 header-nav  +s     A와 B과제  HEADER // NAV
-10장 section-article-aside  +s   C와 D과제  ASIDE // SECTION ARTICLE
-10장 footer-address +s  E 과제 FOOTER
-
-
